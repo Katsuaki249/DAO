@@ -30,12 +30,16 @@ require_once("./config.php");
 // echo $aluno;
 
 // Update
+// $usuario = new Usuario();
+// $usuario->loadById(2);
+// // $usuario->update("Vinicius Katsuaki Shiroma", "892738");
+// echo $usuario;
+
+// Delete
 $usuario = new Usuario();
 
-$usuario->loadById(2);
+$usuario->loadById(5);
 
-$usuario->update("Vinicius Katsuaki Shiroma", "892738");
+$usuario->delete();
 
 echo $usuario;
-
-?>
